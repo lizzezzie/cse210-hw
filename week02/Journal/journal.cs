@@ -61,6 +61,7 @@ public class Journal
             //split the line into 3 original pieces
             string[] parts = line.Split('|');
 
+            // Ensure that the line has exactly 3 parts before creating a new Entry
             if (parts.Length == 3)
             {
                 Entry loadEntry = new Entry();
