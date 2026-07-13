@@ -11,6 +11,7 @@ public class Entry
     {
         //Display the date, prompt text, and entry text
         Console.WriteLine("---------------------------------------------");
+        // Display the entry details in a structured format
         Console.WriteLine($"Date: {_date} | Prompt: {_promptText} | Entry: {_entryText}");
         Console.WriteLine($"Response: {_entryText}");
         Console.WriteLine("---------------------------------------------");
