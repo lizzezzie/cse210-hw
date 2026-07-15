@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class PromptGenerator
 {
-    // Member variable to hold the list of prompts
+    // Member variable to hold the list of prompts.
     private List<string> _prompts;
 
     // Constructor to initialize the list of prompts
@@ -20,7 +20,7 @@ public class PromptGenerator
         };
     }
 
-    // Method to get a random prompt from the list
+    // Method to get a random prompt from the list.
     public string GetRandomPrompt()
     {
         Random random = new Random();

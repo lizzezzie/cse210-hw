@@ -41,7 +41,7 @@ class Program
                 Console.Write("Enter your response: ");
                 string response = Console.ReadLine();
 
-                // Get the current date outomatically as a string
+                // Get the current date automatically as a string
                 string dateText = DateTime.Now.ToString("MM/dd/yyyy");
 
                 // Create a new entry and populate its variables
@@ -65,8 +65,8 @@ class Program
             {
                 Console.Write("Please enter the filename to load your journal entries from: ");
                 string filename = Console.ReadLine();
-                // Check if the file exists before attempting to load
-                theJournal.loadFromFile(filename);
+                
+                theJournal.LoadFromFile(filename);
             }
 
             else if (userChoice == "4")

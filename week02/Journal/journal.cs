@@ -36,15 +36,14 @@ public class Journal
             foreach (var entry in _entries)
             {
                 // Write the entry details to the file in a structured format
-                outputFile.WriteLine($"{entry._date}| {entry._promptText}| {entry._entryText}| ");
+                outputFile.WriteLine($"{entry._date}|{entry._promptText}|{entry._entryText}"); 
                 
-                outputFile.WriteLine(); // Add an empty line for better readability
             }
         }
     }
 
     //Method to load entries from a file
-    public void loadFromFile(string file)
+    public void LoadFromFile(string file)
     {
         if (!File.Exists(file))
         {
